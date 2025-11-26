@@ -1,0 +1,23 @@
+post_install() {
+    echo ""
+    echo "==> SoloLinux Setup has been installed!"
+    echo "==> Run 'sololinux-setup' to configure your system"
+    echo ""
+    echo "==> Note: The script will:"
+    echo "    - Install Starship prompt"
+    echo "    - Configure Oh-My-Zsh"
+    echo "    - Download and apply SoloLinux configs"
+    echo "    - Set up Hyprland environment"
+    echo "    - Change your default shell to zsh"
+    echo ""
+    echo "==> Optional AUR packages (install with yay):"
+    echo "    - brave-bin"
+    echo "    - hyprshade"
+    echo "    - visual-studio-code-bin"
+    echo "    - waypaper"
+    echo ""
+}
+
+post_upgrade() {
+    post_install
+}
